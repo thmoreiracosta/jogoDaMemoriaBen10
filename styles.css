@@ -98,43 +98,15 @@ body {
 }
 
 .linkedin-share-button {
-  width: 40px;
-  height: 40px;
   margin: 130px -360px 0px 0px;
   background-size: 100% 100%;
-<<<<<<< HEAD
-  background-image: url('../img/linkedin-svgrepo-com.svg');
-=======
-  background-image: url('./img/linkedin-svgrepo-com.svg');
->>>>>>> 6cfd54f73ca1d2ffbb023b0df416d121f3a8248b
-  background-color: transparent;
-  border: 0;
   float: right;
-  text-align: end;
-  align-items: flex-end;
-  justify-content: end;
-  justify-items: end;
   cursor: pointer;
-  
 }
 
 .github-share-button {
-  width: 40px;
-  height: 40px;
   margin: 130px -310px 0px 0px;
   background-size: 100% 100%;
-<<<<<<< HEAD
-  background-image: url('../img/github-svgrepo-com.svg');
-  background-color: transparent;
-=======
-  background-image: url('./img/github-svgrepo-com.svg');  
->>>>>>> 6cfd54f73ca1d2ffbb023b0df416d121f3a8248b
-  border: 0;
   float: right;
-  text-align: end;
-  align-items: flex-end;
-  justify-content: end;
-  justify-items: end;
   cursor: pointer;
-  
 }
