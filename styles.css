@@ -111,7 +111,7 @@ body {
   justify-content: end;
   justify-items: end;
   cursor: pointer;
-  position: absolute;
+  
 }
 
 .github-share-button {
@@ -127,5 +127,5 @@ body {
   justify-content: end;
   justify-items: end;
   cursor: pointer;
-  position: absolute;
+  
 }
