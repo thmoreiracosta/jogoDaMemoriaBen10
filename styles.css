@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  /* display: flex; */
+  background-color: rgb(108, 137, 11);
+}
+
+.img-responsive {
+  max-width: auto;
+  max-height: auto;
+  width: 105vmax;
+  height: 105%;
+  display: flex;
+  position: fixed;
+  z-index: -1;
+}
+
+.memory-game {
+  height: 740px;
+  width: 740px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.card {
+  height: calc(33% - 35px);
+  width: calc(25% - 44px);
+  margin: 3px;
+  position: relative;
+  box-shadow: 1px 1px 20px rgba(1, 1, 1, 0.3);
+  cursor: pointer;
+  transform: scale(1.015);
+  transform-style: preserve-3d;
+  transition: transform 0.9s;
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.3s;
+}
+
+.card-front,
+.card-back {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  position: absolute;
+  border-radius: 6px;
+  background: rgb(121, 221, 7);
+  backface-visibility: hidden;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  /* position:static; */
+  margin-top: 175px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* FLIP-CARD */
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.btn-primary {
+  width: 10%;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: rgb(60, 148, 68);
+  color: rgb(255, 255, 255);
+  float: right;
+  margin-right: 230px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(23, 90, 153);
+  transition: 0.6s;
+}
+
+.linkedin-share-button {
+  width: 40px;
+  height: 40px;
+  margin: 130px -360px 0px 0px;
+  background-size: 100% 100%;
+  background-image: url('/img/linkedin-svgrepo-com.svg');
+  background-color: transparent;
+  border: 0;
+  float: right;
+  text-align: end;
+  align-items: flex-end;
+  justify-content: end;
+  justify-items: end;
+  cursor: pointer;
+}
+
+.github-share-button {
+  width: 40px;
+  height: 40px;
+  margin: 130px -310px 0px 0px;
+  background-size: 100% 100%;
+  background-image: url('/img/github-svgrepo-com.svg');
+  background-color: transparent;
+  border: 0;
+  float: right;
+  text-align: end;
+  align-items: flex-end;
+  justify-content: end;
+  justify-items: end;
+  cursor: pointer;
+}
